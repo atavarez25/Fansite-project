@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> a </title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		<script src="load.js"> </script>
+		
+		<div id="Container" class="Column">
+			<h1> Discography </h1>
+			<div class="album-container">
+					<li class="album" name="illmatic"> Illmatic
+						<div class="album-display" id="illmatic">
+								<hr>
+								<table>
+									<tr>
+									<th> N.Y. State of Mind </th>
+									<th> Life's a bitch </th>
+									<th> The World Is Yours </th>
+									<th> Halftime </th>
+									<th> Memory Lane </th>
+									<th> One Love </th>
+									</tr>
+									<tr>
+									<th> One Time 4 Your Mind </th>
+									<th> Represent </th>
+									<th> It Ain't Hard to Tell </th>
+									</tr>
+								</table>
+								<iframe class="spotify-embed" src="https://open.spotify.com/embed/album/3kEtdS2pH6hKcMU9Wioob1?utm_source=generator&theme=0" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+						</div>
+					</li>
+	
+					<li class="album" name="Written"> It was written
+							<div class="album-display" id="Written">
+								<hr>
+								<table>
+									<tr>
+									<th> The Message </th>
+									<th> Street Dreams </th>
+									<th> I Gave You Power </th>
+									<th> Take It IN Blood </th>
+									<th> Nas Is Coming (feat dr dre) </th>
+									<th> Affirmative Action </th>
+									</tr>
+									<th> The Set Up </th>
+									<th> Black Girl Lost </th>
+									<th> Suspect </th>
+									<th> Shootouts </th>
+									<th> If I Ruled the World </th>
+								</table>
+								<iframe src="https://open.spotify.com/embed/album/78Fgb88MY0ECc4GVMejqTg?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+				    </li>
+
+				    <li class="album" name="Iam"> I Am...
+							<div class="album-display" id="Iam">
+								<hr>
+								<table>
+									<tr>
+									<th> The Message </th>
+									<th> Street Dreams </th>
+									<th> I Gave You Power </th>
+									<th> Take It IN Blood </th>
+									<th> Nas Is Coming (feat dr dre) </th>
+									<th> Affirmative Action </th>
+									</tr>
+									<th> The Set Up </th>
+									<th> Black Girl Lost </th>
+									<th> Suspect </th>
+									<th> Shootouts </th>
+									<th> If I Ruled the World </th>
+								</table>
+								<iframe src="https://open.spotify.com/embed/album/4UhEjfIRx4tE1XRY21vwNa?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+				    </li>
+					<hr>
+					<li> Collapsable </li>
+			</div>
+		</div>
+
+		<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+  <script>
+
+  	$(".album").each(function(i){
+  		this.addEventListener("click",function() {
+  			$("#".concat(this.getAttribute("name"))).toggle();
+  		})
+  	})
+  	
+  	
+
+
+ //` 	$(".album").click(function() {
+  //		$("#illmatic").toggle();
+ // 	});
+//`
+  </script>
+	</body>
+</html>
