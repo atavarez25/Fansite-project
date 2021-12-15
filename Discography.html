@@ -84,11 +84,14 @@
 			</div>
 		</div>
 
-		<script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
   <script>
+  	console.log("adjgueatuhaiutg");
+  	const Albums = `3kEtdS2pH6hKcMU9Wioob1,78Fgb88MY0ECc4GVMejqTg,4UhEjfIRx4tE1XRY21vwNa,0yv3K62ndWgrZ0bbAEMzj5`;
+  	const AlbumsData = $.get("https://www.api.spotify.com/v1/albums",Albums,function() {
+  		console.log("worked");
+  	});
 
   	$(".album").each(function(i){
   		this.addEventListener("click",function() {
@@ -102,7 +105,7 @@
  //` 	$(".album").click(function() {
   //		$("#illmatic").toggle();
  // 	});
-//`
+//`git 
   </script>
 	</body>
 </html>
